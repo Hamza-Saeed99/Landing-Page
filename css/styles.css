@@ -1,0 +1,57 @@
+body {
+    font-family: 'Open Sans',Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-image: linear-gradient(to bottom right, #ED213A, #93291E);
+}
+
+footer {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.header-container {
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+}
+
+#home {
+    background-image: url("../img/logo-yakuza0.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#screenshots {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.screenshot img{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    border: 2px solid #4c4c4c;
+    border-radius: 20%;
+}
+
+header, footer, #home, #screenshots, #memes, #reviews, #about-me {
+    padding: 16px;
+}
