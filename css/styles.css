@@ -22,6 +22,7 @@ header {
 footer {
     display: flex;
     justify-self: flex-end;
+    align-items: center;
 }
 
 .header-container {
@@ -30,16 +31,30 @@ footer {
     font-size: 16px;
 }
 
+h1 {
+    font-size: x-large;
+}
+
 #home {
-    background-image: url("../img/logo-yakuza0.png");
+    
+    background-image: linear-gradient(to top right, #ED213A, #93291E);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #screenshots {
     display: flex;
-    gap: 16px;
     padding: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.screenshot-container {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .screenshot img{
@@ -50,6 +65,37 @@ footer {
     object-fit: contain;
     border: 2px solid #4c4c4c;
     border-radius: 20%;
+}
+
+.player {
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+    height: 315px;
+    width: 420px;
+}
+
+.videos {
+    display: flex;
+}
+
+#memes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reviews {
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header, footer, #home, #screenshots, #memes, #reviews, #about-me {
