@@ -127,6 +127,9 @@ h1 {
 
 .videos {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    max-width: 100%;
 }
 
 #memes {
